@@ -1,0 +1,17 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backup": "^1.1.0",
+    "discord": "^0.8.2",
+    "discord-anti-spam": "^2.2.2",
+    "sql": "^0.78.0"
+  }
+}
