@@ -48,9 +48,7 @@ bot.on("message", async message => {
         const commandeFile = bot.commands.get(cmd);
         if(commandeFile) commandeFile.run(bot, message, args);
 
-        db.add(`globalMessages_${message.author.id}`, 1);
-
-        db.add(`guildMessages_${message.guild.id}_${message.author.id}`, 1)
+        
     
 });
 
