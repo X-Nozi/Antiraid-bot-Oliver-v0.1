@@ -10,7 +10,7 @@ bot.commands = new Discord.Collection();
 
 const config = require("./config.json");
 
-client.on("guildMemberAdd", member => {
+bot.on("guildMemberAdd", member => {
 
         if(member.user.bot) {
  
