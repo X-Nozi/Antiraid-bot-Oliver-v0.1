@@ -62,18 +62,7 @@ bot.on("message", async message => {
         db.add(`globalMessages_${message.author.id}`, 1);
 
         db.add(`guildMessages_${message.guild.id}_${message.author.id}`, 1)
-
-
-
+    
 
 
     });
-
- client.on("guildMemberAdd", member => {
-
-        if(member.user.bot) {
- 
-     member.ban()
-
-    }
-
