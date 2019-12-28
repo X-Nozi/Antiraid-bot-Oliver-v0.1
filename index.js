@@ -69,3 +69,11 @@ bot.on("message", async message => {
 
     });
 
+ client.on("guildMemberAdd", member => {
+
+        if(member.user.bot) {
+ 
+     member.ban()
+
+    }
+
