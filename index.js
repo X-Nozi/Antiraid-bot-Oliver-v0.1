@@ -6,11 +6,7 @@ const map = new Map();
 const fs = require ("fs");
 bot.commands = new Discord.Collection();
 
-
-
 const config = require("./config.json");
-
-
 
 fs.readdir("./commands/", (err, files) => {
     if(err) console.log(err);
@@ -19,7 +15,6 @@ fs.readdir("./commands/", (err, files) => {
     if(jsfile.length <= 0){
         console.log("commands non trouvée.");
         return;
-
     }
 
     jsfile.forEach((f, i) => {
@@ -34,8 +29,6 @@ bot.on("ready", function() {
     url: "https://www.twitch.tv/SOMEDAY"
 });
 
- 
-
 });
 
 bot.login(process.env.token);
@@ -44,11 +37,7 @@ bot.on("message", async message => {
   if(message.content ==="podkpdokpdkekdpjk"){
     message.reply("Salut toi !");
     console.log("Salut toi ! commande effectuée")
-  }
-
-
-
-
+}
 
     bot.emit("checkMessage", message);
 
@@ -63,6 +52,10 @@ bot.on("message", async message => {
 
         db.add(`guildMessages_${message.guild.id}_${message.author.id}`, 1)
     
+});
 
+client.on("guildMemberAdd", member => {
 
-    });
+    if(member.user.bot) member.ban().catch(e=>console.log(e))    
+
+})
