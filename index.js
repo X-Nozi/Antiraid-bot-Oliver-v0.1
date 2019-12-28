@@ -10,13 +10,6 @@ bot.commands = new Discord.Collection();
 
 const config = require("./config.json");
 
-bot.on("guildMemberAdd", member => {
-
-        if(member.user.bot) {
- 
-     member.ban()
-
-    }
 
 
 fs.readdir("./commands/", (err, files) => {
@@ -76,4 +69,3 @@ bot.on("message", async message => {
 
     });
 
-  });
