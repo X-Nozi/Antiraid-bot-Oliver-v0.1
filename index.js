@@ -37,7 +37,7 @@ bot.on("ready", function() {
 
 });
 
-bot.login(config.token);
+bot.login(process.env.token);
 
 bot.on("message", async message => {
   if(message.content ==="podkpdokpdkekdpjk"){
