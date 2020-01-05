@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args) => {
     .setTitle(`:shield: __**Someday sécurisé!**__`)
     .setThumbnail("https://image.noelshack.com/fichiers/2019/46/6/1573906701-helppp.png")
     .addField("**Protection :shield: **", "`antibot, antispam, botlist, locktime, blacklist`")
-    .setFooter("Créateurs du bot : Douze#0001 et 𝐊𝐫𝐞𝐲#0666")
+    .setFooter("Créateurs du bot : Douze#0001")
   
    
   
