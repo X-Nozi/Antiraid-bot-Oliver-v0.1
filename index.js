@@ -1,7 +1,7 @@
 const Discord = require ("discord.js");
 const bot = new Discord.Client();
 var prefix = "/";
-const ownerID = `642694924847808512`
+const ownerID = `770337582818263062`
 const map = new Map();
 const fs = require ("fs");
 bot.commands = new Discord.Collection();
@@ -24,7 +24,7 @@ fs.readdir("./commands/", (err, files) => {
 })
 
 bot.on("ready", function() {
-  bot.user.setActivity("Someday sécurisé!", {
+  bot.user.setActivity("Synthwave sécurisé!", {
     type: 'STREAMING',
     url: "https://www.twitch.tv/SOMEDAY"
 });
